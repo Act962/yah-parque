@@ -8,7 +8,7 @@ export function HomeLayout({ children }: HomeLayoutProps) {
   return (
     <div className="relative flex min-h-screen flex-col bg-white">
       <Header />
-      <main className="flex-1 flex flex-col mt-10 mb-12">{children}</main>
+      <main className="flex-1 flex flex-col">{children}</main>
     </div>
   );
 }
