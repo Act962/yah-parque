@@ -1,0 +1,22 @@
+import Image from "next/image";
+
+export function Carousel() {
+  return (
+    <div className="h-full w-full flex items-center">
+      <button></button>
+      <div className="w-full h-full overflow-hidden relative">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          id="slider"
+        >
+          <Image
+            src="/image-1.jpg"
+            alt="Slider 1"
+            fill
+            className="object-cover bg-bottom"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

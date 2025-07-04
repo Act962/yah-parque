@@ -2,8 +2,10 @@
 
 import { Menu, Smartphone } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
+import { Logo } from "../logo";
+import { cn } from "@/lib/utils";
 
 const links = [
   {
@@ -30,11 +32,30 @@ const links = [
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Acompanha o scroll da página
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    // Verifica o estado inicial
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="text-sm text-white w-full fixed top-0">
+    <div className="text-sm text-white w-full fixed top-0 z-50">
       {/* Barra superior de promoção */}
-      <div className="text-center font-medium x-6 md:px-16 lg:px-24 xl:px-32 py-2 bg-gradient-to-r from-violet-500 via-[#9938CA] to-[#E0724A]">
+      <div
+        className={cn(
+          "hidden sm:block text-center font-medium x-6 md:px-16 lg:px-24 xl:px-32 py-2 bg-[#FC1F56] transition-all",
+          isScrolled && "hidden"
+        )}
+      >
         <div className="container flex items-center justify-between mx-auto">
           <p className="text-xs sm:text-sm">
             Um dos maiores parques aquáticos a beira-mar do Norte e Nordeste
@@ -57,9 +78,11 @@ export function Header() {
 
       {/* Navbar principal */}
       <nav className="relative h-[70px] flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 bg-orange-400 text-white transition-all shadow-sm">
-        <Link href="/">Logo</Link>
+        <Link href="/">
+          <Logo />
+        </Link>
 
-        <ul className="hidden md:flex items-center space-x-8 md:pl-28">
+        <ul className="hidden md:flex items-center space-x-8">
           {links.map((link, index) => (
             <li
               key={`${index}-${link.path}`}
@@ -67,7 +90,7 @@ export function Header() {
             >
               <Link href="#"> {link.name} </Link>
               <div
-                className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 bg-white`}
+                className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 bg-orange-600`}
               />
             </li>
           ))}
@@ -104,7 +127,7 @@ export function Header() {
                     {link.name}{" "}
                   </Link>
                   <div
-                    className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 bg-white`}
+                    className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 bg-orange-600`}
                   />
                 </li>
               ))}
