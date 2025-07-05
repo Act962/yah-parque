@@ -55,8 +55,9 @@ export function AttractionSection() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-rows-2 gap-4 mt-8 h-[26rem]">
-          <div className="relative row-span-2 rounded-2xl overflow-hidden group">
+        <div className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4 mt-8 h-[26rem]">
+          {/* Card 1 */}
+          <div className="h-52 sm:h-auto relative sm:row-span-2 rounded-2xl overflow-hidden group">
             <Image
               src="/feature-1.png"
               alt="Torre Yah"
@@ -69,7 +70,8 @@ export function AttractionSection() {
               Torre Yah
             </span>
           </div>
-          <div className="relative md:col-span-2 rounded-2xl overflow-hidden group">
+          {/* Card 2 */}
+          <div className="h-52 sm:h-auto relative sm:col-span-2 rounded-2xl overflow-hidden group">
             <Image
               src="/feature-2.png"
               alt="Torre Yah"
@@ -81,7 +83,8 @@ export function AttractionSection() {
               Espaço Kids 01
             </span>
           </div>
-          <div className="relative rounded-2xl overflow-hidden group">
+          {/* Card 3 */}
+          <div className="h-52 sm:h-auto relative rounded-2xl overflow-hidden group">
             <Image
               src="/feature-3.png"
               alt="Torre Yah"
@@ -93,7 +96,8 @@ export function AttractionSection() {
               Espaço Kids 02
             </span>
           </div>
-          <div className="relative rounded-2xl overflow-hidden group">
+          {/* Card 4 */}
+          <div className="h-52 sm:h-auto relative rounded-2xl overflow-hidden group">
             <Image
               src="/feature-4.png"
               alt="Torre Yah"
