@@ -30,7 +30,7 @@ const features = [
 
 export function AttractionSection() {
   return (
-    <div className="h-full flex flex-col items-center justify-center py-12 px-3">
+    <section className="h-fit flex flex-col items-center justify-center py-32 px-3 ">
       <div className="w-full max-w-7xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature, index) => (
@@ -48,14 +48,14 @@ export function AttractionSection() {
 
         <div className="mt-12 flex flex-col gap-0.5">
           <h2 className="text-2xl md:text-3xl font-semibold text-orange-500">
-            Atrações - adrenalina e aventura
+            Atrações, adrenalina e aventura
           </h2>
           <span className="text-xs text-gray-500">
             Sinta a adrenalina: atrações para os corajosos!
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4 mt-8 h-[26rem]">
+        <div className="h-auto grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4 mt-8 md:h-[26rem]">
           {/* Card 1 */}
           <div className="h-52 sm:h-auto relative sm:row-span-2 rounded-2xl overflow-hidden group">
             <Image
@@ -63,7 +63,7 @@ export function AttractionSection() {
               alt="Torre Yah"
               width={1640}
               height={860}
-              className="h-full object-cover group-hover:scale-110 transition-all"
+              className="h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
 
             <span className="z-40 absolute bottom-4 left-4 text-white px-4 py-1 rounded-full bg-[#00c7df]">
@@ -77,7 +77,7 @@ export function AttractionSection() {
               alt="Torre Yah"
               width={1640}
               height={860}
-              className="h-full object-cover group-hover:scale-110 transition-all"
+              className="h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <span className="z-40 absolute bottom-4 left-4 text-white px-4 py-1 rounded-full bg-[#00c7df]">
               Espaço Kids 01
@@ -90,7 +90,7 @@ export function AttractionSection() {
               alt="Torre Yah"
               width={1640}
               height={860}
-              className="h-full object-cover group-hover:scale-110 transition-all"
+              className="h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <span className="z-40 absolute bottom-4 left-4 text-white px-4 py-1 rounded-full bg-[#00c7df]">
               Espaço Kids 02
@@ -103,7 +103,7 @@ export function AttractionSection() {
               alt="Torre Yah"
               width={1640}
               height={860}
-              className="h-full object-cover group-hover:scale-110 transition-all"
+              className="h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <span className="z-40 absolute bottom-4 left-4 text-white px-4 py-1 rounded-full bg-[#00c7df]">
               Portal entrada
@@ -111,6 +111,6 @@ export function AttractionSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,10 +1,30 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800"],
+const filsonSoft = localFont({
+  src: [
+    {
+      path: "../font/Filsonsoft-regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../font/Filsonsoft-medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../font/Filsonsoft-bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../font/Filsonsoft-black.otf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${filsonSoft.className} antialiased`}>{children}</body>
     </html>
   );
 }
