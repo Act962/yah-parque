@@ -1,30 +1,40 @@
 import Link from "next/link";
 import { Logo } from "../logo";
 import { Button } from "../ui/button";
-import { Smartphone } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   return (
     <footer className="bg-[#0069D6] px-4 h-[40rem] flex flex-col items-center justify-center text-white">
-      <div className="w-full max-w-7xl flex flex-col sm:flex-row items-center justify-between">
+      <div className="w-full max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4">
         {/* Logo + Links */}
         <div className="flex items-center gap-4">
           <Logo />
           <ul>
             <li>
-              <Link href="/">Ingressos</Link>
+              <Link href="/" className="hover:underline underline-offset-2">
+                Ingressos
+              </Link>
             </li>
             <li>
-              <Link href="/">Sobre o parque</Link>
+              <Link href="/" className="hover:underline underline-offset-2">
+                Sobre o parque
+              </Link>
             </li>
             <li>
-              <Link href="/">Atrações</Link>
+              <Link href="/" className="hover:underline underline-offset-2">
+                Atrações
+              </Link>
             </li>
             <li>
-              <Link href="/">Passaportes</Link>
+              <Link href="/" className="hover:underline underline-offset-2">
+                Passaportes
+              </Link>
             </li>
             <li>
-              <Link href="/">Faça sua reserva</Link>
+              <Link href="/" className="hover:underline underline-offset-2">
+                Faça sua reserva
+              </Link>
             </li>
           </ul>
         </div>
@@ -51,10 +61,12 @@ export function Footer() {
           </span>
 
           <div className="flex items-center gap-1">
-            <Smartphone className="size-4" />
-            <Smartphone className="size-4" />
-            <Smartphone className="size-4" />
-            <Smartphone className="size-4" />
+            <Image
+              src="/redes-sociais.svg"
+              alt="Redes sociais"
+              width={60}
+              height={45}
+            />
           </div>
         </div>
       </div>

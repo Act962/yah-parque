@@ -1,11 +1,12 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Menu, Smartphone } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "../logo";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   {
@@ -60,16 +61,18 @@ export function Navbar() {
             Um dos maiores parques aquáticos a beira-mar do Norte e Nordeste
           </p>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <span className="text-xs sm:text-sm font-light">
               Acesso nossas redes socias:
             </span>
 
-            <div className="flex items-center gap-1">
-              <Smartphone className="size-4" />
-              <Smartphone className="size-4" />
-              <Smartphone className="size-4" />
-              <Smartphone className="size-4" />
+            <div className="flex items-center">
+              <Image
+                src="/redes-sociais.svg"
+                alt="Redes sociais"
+                width={60}
+                height={45}
+              />
             </div>
           </div>
         </div>
