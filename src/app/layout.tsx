@@ -5,6 +5,11 @@ import "./globals.css";
 const filsonSoft = localFont({
   src: [
     {
+      path: "../font/Filsonsoft-light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
       path: "../font/Filsonsoft-regular.otf",
       weight: "400",
       style: "normal",
