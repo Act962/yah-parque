@@ -61,7 +61,7 @@ export function Footer() {
           <div>
             <span className="font-bold text-[#E7D110]">@yahacquapark</span>
             <p className="text-sm">
-              Luis Correia - PI <br />
+              Luís Correia - PI <br />
               Praia do Barro Preto
             </p>
           </div>
