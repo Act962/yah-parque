@@ -1,9 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import { Logo } from "../logo";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export function Footer() {
+  const handleClick = () => {
+    sendGTMEvent({ event: "buttonClicked", value: "buy_your_passport" });
+
+    const url =
+      "https://nasaex.com/app/formulario?task=1748707030433x441797963239915500";
+
+    window.open(url, "_blank");
+  };
   return (
     <footer className="bg-[#0069D6] px-4 h-[40rem] flex flex-col items-center justify-center text-white">
       <div className="w-full max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -43,6 +54,7 @@ export function Footer() {
           <Button
             variant="primary"
             className="px-9 py-2 rounded-full transition-all"
+            onClick={handleClick}
           >
             Compre seu passaporte
           </Button>

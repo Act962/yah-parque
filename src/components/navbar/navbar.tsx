@@ -7,6 +7,7 @@ import { Logo } from "../logo";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const links = [
   {
@@ -47,6 +48,16 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleClick = () => {
+    sendGTMEvent({ event: "buttonClicked", value: "buy_your_passport" });
+
+    const url =
+      "https://nasaex.com/app/formulario?task=1748707030433x441797963239915500";
+
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="w-full fixed top-0 z-50 text-white">
       {/* Barra superior de promoção */}
@@ -101,7 +112,11 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <Button variant="primary" className="hidden md:inline">
+          <Button
+            variant="primary"
+            className="hidden md:inline"
+            onClick={handleClick}
+          >
             Compre seu Passaporte
           </Button>
 
@@ -121,7 +136,7 @@ export function Navbar() {
                 {links.map((link, index) => (
                   <li
                     key={`${index}-${link.path}`}
-                    className="group flex flex-col gap-0.5"
+                    className="group flex flex-col gap-0.5 w-fit"
                   >
                     <Link href="#" className="text-sm">
                       {" "}
@@ -133,7 +148,11 @@ export function Navbar() {
                   </li>
                 ))}
               </ul>
-              <Button variant="primary" className="w-full mt-6">
+              <Button
+                variant="primary"
+                className="w-full mt-6"
+                onClick={handleClick}
+              >
                 Compre seu Passaporte
               </Button>
             </div>
