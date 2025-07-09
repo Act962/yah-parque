@@ -17,7 +17,7 @@ export function WhatsFloating() {
   };
 
   return (
-    <div
+    <button
       className="fixed bottom-4 right-4 cursor-pointer"
       onClick={handleClick}
     >
@@ -28,6 +28,6 @@ export function WhatsFloating() {
         height={2048}
         className="size-12 rounded-full animate-scale-up"
       />
-    </div>
+    </button>
   );
 }
