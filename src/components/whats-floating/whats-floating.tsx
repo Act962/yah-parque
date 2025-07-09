@@ -1,8 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export function WhatsFloating() {
+  sendGTMEvent({ event: "whatsapp_send" });
   const handleClick = () => {
     const phoneNumber = "8694856274"; // Substitua pelo número desejado (com DDI e DDD, sem espaços ou sinais)
     const message = "Olá! Quero mais informações."; // Mensagem opcional
