@@ -62,7 +62,7 @@ export function Footer() {
             <span className="font-bold text-[#E7D110]">@yahacquapark</span>
             <p className="text-sm">
               Luis Correia - PI <br />
-              Praia da Barra Preta
+              Praia do Barro Preto
             </p>
           </div>
         </div>
