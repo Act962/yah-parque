@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 // const filsonSoft = localFont({
@@ -54,6 +54,7 @@ export default function RootLayout({
       <html lang="en">
         <GoogleTagManager gtmId="GTM-THD2FT4Z" />
         <body className={`${poppins.className} antialiased`}>{children}</body>
+        <GoogleAnalytics gaId="G-PEZGDN4YE3" />
       </html>
     </>
   );
