@@ -50,33 +50,34 @@ export function Navbar() {
   return (
     <div className="w-full fixed top-0 z-50 text-white">
       {/* Barra superior de promoção */}
-      <div
-        className={cn(
-          "hidden sm:flex items-center justify-center text-center font-medium bg-[#FC1F56] transition-all px-4 py-2",
-          isScrolled && "hidden"
-        )}
-      >
-        <div className="w-full max-w-7xl flex items-center justify-between mx-auto">
-          <p className="text-xs sm:text-sm font-light">
-            Um dos maiores parques aquáticos a beira-mar do Norte e Nordeste
-          </p>
+      {!isScrolled && (
+        <div
+          className={cn(
+            "hidden sm:flex items-center justify-center text-center font-medium bg-[#FC1F56] transition-all px-4 py-2"
+          )}
+        >
+          <div className="w-full max-w-7xl flex items-center justify-between mx-auto">
+            <p className="text-xs sm:text-sm font-light">
+              Um dos maiores parques aquáticos a beira-mar do Norte e Nordeste
+            </p>
 
-          <div className="flex items-center gap-2">
-            <span className="text-xs sm:text-sm font-light">
-              Acesso nossas redes socias:
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-xs sm:text-sm font-light">
+                Acesso nossas redes socias:
+              </span>
 
-            <div className="flex items-center">
-              <Image
-                src="/redes-sociais.svg"
-                alt="Redes sociais"
-                width={60}
-                height={45}
-              />
+              <div className="flex items-center">
+                <Image
+                  src="/redes-sociais.svg"
+                  alt="Redes sociais"
+                  width={60}
+                  height={45}
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
       {/* Fim superior de promoção */}
       <nav className="relative w-full bg-orange-500 px-4 h-[70px] flex items-center justify-center">
         <div
