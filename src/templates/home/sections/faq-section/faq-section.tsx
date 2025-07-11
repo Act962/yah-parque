@@ -9,7 +9,7 @@ import React from "react";
 export function FaqSection() {
   return (
     <section className="min-h-screen py-32 px-4">
-      <div className="w-full max-w-7xl mx-auto space-y-6">
+      <div className="w-full max-w-6xl mx-auto space-y-6">
         <h2 className="font-bold text-[#FF7226] text-lg sm:text-2xl md:text-6xl md:mt-16">
           Perguntas Frequentes
         </h2>

@@ -18,7 +18,7 @@ export function WhatsFloating() {
 
   return (
     <button
-      className="fixed bottom-4 right-4 cursor-pointer"
+      className="fixed z-50 bottom-4 right-4 cursor-pointer"
       onClick={handleClick}
     >
       <Image

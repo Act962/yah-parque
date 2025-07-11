@@ -3,8 +3,10 @@ import Image from "next/image";
 export function AboutSection() {
   return (
     <>
-      <div className="h-full py-32 px-4  bg-[url('/banner-2.png')] bg-center object-contain text-white relative">
-        <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 place-content-center gap-2">
+      <div className="h-full pb-48 pt-20 px-4 text-white relative">
+        <div className="absolute bg-[url('/banner-2.png')] inset-0 bg-cover bg-left bg-no-repeat" />
+
+        <div className="relative mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 place-content-center gap-2">
           {/* Left */}
           <div className="w-full  col-span-1 flex flex-col space-y-8">
             <h2 className="font-bold text-2xl sm:text-3xl md:text-6xl">
@@ -42,7 +44,7 @@ export function AboutSection() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full h-[100px] z-0">
+        <div className=" absolute bottom-0 left-0 w-full h-[100px] z-0">
           <Image
             src="/onda.svg"
             alt="Onda"

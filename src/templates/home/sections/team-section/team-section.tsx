@@ -5,7 +5,7 @@ export function TeamSection() {
   return (
     <section className="h-auto relative">
       <div className="absolute w-full px-4">
-        <div className="w-full max-w-7xl mx-auto">
+        <div className="w-full max-w-6xl mx-auto">
           <h2 className="font-bold text-[#FF7226] text-lg sm:text-2xl md:text-6xl md:mt-16">
             Conheça a Turminha
           </h2>

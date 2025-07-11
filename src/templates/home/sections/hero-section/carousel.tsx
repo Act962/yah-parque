@@ -12,7 +12,7 @@ export function Carousel() {
             src="/banner-1.png"
             alt="Slider 1"
             fill
-            className="object-cover bg-bottom h-full w-full"
+            className="object-cover bg-bottom"
           />
         </div>
       </div>
