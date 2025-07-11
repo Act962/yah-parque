@@ -16,8 +16,9 @@ export function Footer() {
     window.open(url, "_blank");
   };
   return (
-    <footer className="bg-[#0069D6] px-4 h-[40rem] flex flex-col items-center justify-center text-white">
-      <div className="w-full max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="relative px-4 h-[40rem] flex flex-col items-center justify-center text-white">
+      <div className="absolute bg-[url('/footer.png')] inset-0 bg-cover bg-left bg-no-repeat" />
+      <div className="relative w-full max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4 mt-60">
         {/* Logo + Links */}
         <div className="flex items-center gap-4">
           <Logo />
@@ -82,7 +83,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <span className="text-center text-sm mt-16">
+      <span className="relative text-center text-sm mt-16">
         Copyright &copy; Yah Acqua Park 2025 - Todos os direitos reservados
       </span>
     </footer>
