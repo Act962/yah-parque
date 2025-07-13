@@ -42,6 +42,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Yah Acqua Park",
   description: "Parque Aquático",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
