@@ -1,13 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Logo() {
   return (
-    <Image
-      src="/logo.svg"
-      className="object-cover size-10 w-fit "
-      alt="Logo"
-      width={100}
-      height={100}
-    />
+    <Link
+      href="/"
+      className="cursor-pointer
+    "
+    >
+      <Image
+        src="/logo.svg"
+        className="object-cover size-10 w-fit "
+        alt="Logo"
+        width={100}
+        height={100}
+      />
+    </Link>
   );
 }

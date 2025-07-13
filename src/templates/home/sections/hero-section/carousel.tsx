@@ -9,7 +9,7 @@ export function Carousel() {
           id="slider"
         >
           <Image
-            src="/banner-1.png"
+            src="/BANNER-TOPO.jpg"
             alt="Slider 1"
             fill
             className="object-cover bg-bottom"

@@ -68,12 +68,12 @@ export function Navbar() {
           )}
         >
           <div className="w-full max-w-7xl flex items-center justify-between mx-auto">
-            <p className="text-xs sm:text-sm font-light">
+            <p className="text-xs  font-light">
               Um dos maiores parques aquáticos a beira-mar do Norte e Nordeste
             </p>
 
             <div className="flex items-center gap-2">
-              <span className="text-xs sm:text-sm font-light">
+              <span className="text-xs  font-light">
                 Acesso nossas redes socias:
               </span>
 
@@ -131,34 +131,34 @@ export function Navbar() {
             <Menu />
           </Button>
           {/* Menu Mobile */}
-          {menuOpen && (
-            <div className="absolute top-[70px] left-0 w-full shadow-sm p-6 md:hidden z-10 bg-orange-500">
-              <ul className="flex flex-col space-y-4">
-                {links.map((link, index) => (
-                  <li
-                    key={`${index}-${link.path}`}
-                    className="group flex flex-col gap-0.5 w-fit"
-                  >
-                    <Link href="#" className="text-sm">
-                      {" "}
-                      {link.name}{" "}
-                    </Link>
-                    <div
-                      className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 bg-orange-600`}
-                    />
-                  </li>
-                ))}
-              </ul>
-              <Button
-                variant="primary"
-                className="w-full mt-6"
-                onClick={handleClick}
-              >
-                Compre seu Passaporte
-              </Button>
-            </div>
-          )}
         </div>
+        {menuOpen && (
+          <div className="absolute top-[70px] left-0 w-full shadow-sm p-6 md:hidden z-50 bg-orange-500">
+            <ul className="flex flex-col space-y-4">
+              {links.map((link, index) => (
+                <li
+                  key={`${index}-${link.path}`}
+                  className="group flex flex-col gap-0.5 w-fit"
+                >
+                  <Link href="#" className="text-sm">
+                    {" "}
+                    {link.name}{" "}
+                  </Link>
+                  <div
+                    className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 bg-orange-600`}
+                  />
+                </li>
+              ))}
+            </ul>
+            <Button
+              variant="primary"
+              className="w-full mt-6"
+              onClick={handleClick}
+            >
+              Compre seu Passaporte
+            </Button>
+          </div>
+        )}
       </nav>
     </div>
   );

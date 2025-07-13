@@ -48,7 +48,7 @@ export function AttractionSection() {
 
         <div className="mt-12 flex flex-col gap-0.5">
           <h2 className="text-2xl md:text-3xl font-semibold text-orange-500">
-            Atrações, adrenalina e aventura
+            Conheça Nosso Park
           </h2>
           <span className="text-xs text-gray-500">
             Sinta a adrenalina: atrações para os corajosos!
