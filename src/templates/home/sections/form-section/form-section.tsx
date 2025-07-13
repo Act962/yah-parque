@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -16,8 +17,17 @@ export function FormSection() {
       </h3>
 
       <div className="w-full flex flex-col gap-4 mt-8">
-        <Input placeholder="Nome" />
-        <Input placeholder="E-mail" type="email" />
+        <Input
+          placeholder="Nome"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <Input
+          placeholder="E-mail"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </div>
       <div className="flex items-center space-x-4 mt-4 max-w-3xl">
         <Checkbox
@@ -31,6 +41,10 @@ export function FormSection() {
           utilizados para enviar de promoção e ações de marketing da Yah Park.
         </Label>
       </div>
+
+      <Button className="mt-4 rounded-full bg-[#36C3B3] hover:bg-[#36C3B3]/70 w-32">
+        Enviar
+      </Button>
     </div>
   );
 }
