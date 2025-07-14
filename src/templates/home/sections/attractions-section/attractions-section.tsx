@@ -83,7 +83,7 @@ export function AttractionSection() {
               className="h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <span className="z-40 absolute bottom-4 left-4 text-white px-4 py-1 rounded-full bg-[#00c7df]">
-              Espaço Kids 01
+              Espaço Kids Tibum
             </span>
           </div>
           {/* Card 3 */}
@@ -96,7 +96,7 @@ export function AttractionSection() {
               className="h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <span className="z-40 absolute bottom-4 left-4 text-white px-4 py-1 rounded-full bg-[#00c7df]">
-              Espaço Kids 02
+              Espaço Kids Splash
             </span>
           </div>
           {/* Card 4 */}
