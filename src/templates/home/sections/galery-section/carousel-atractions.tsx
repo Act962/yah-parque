@@ -105,6 +105,7 @@ export default function ImageGallery() {
                   sizes="(max-width: 768px) 100vw, 1200px"
                   priority={index === 0} // carrega primeiro slide mais rápido
                 />
+                <div className="absolute bottom-0 w-full h-1/2 z-20 bg-gradient-to-t from-black/80 via-black/30 to-transparent blur-2xl" />
               </div>
             ))}
           </div>
