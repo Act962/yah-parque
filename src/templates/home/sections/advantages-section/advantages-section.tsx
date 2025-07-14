@@ -178,7 +178,7 @@ export function AdvantagesSections() {
                   variant="primary"
                   className="w-fit"
                 >
-                  Adquerir seu Black Card
+                  Adquerir seu Platinum Card
                 </Button>
               </div>
             </div>
