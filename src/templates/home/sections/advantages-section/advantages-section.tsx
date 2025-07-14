@@ -13,7 +13,7 @@ export function AdvantagesSections() {
   };
 
   return (
-    <div className="w-full py-16 flex flex-col px-4">
+    <section id="cards" className="w-full py-16 flex flex-col px-4 scroll-mt-4">
       <div className="w-full max-w-6xl flex flex-col mx-auto">
         {/* Title */}
         <div className="flex flex-col gap-0.5 text-center sm:text-start">
@@ -157,6 +157,6 @@ export function AdvantagesSections() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

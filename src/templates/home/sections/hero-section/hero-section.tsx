@@ -2,7 +2,11 @@ import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   return (
-    <div className={cn("relative min-h-[80vh] bg-red-300 mt-[70px]")}>
+    <div
+      className={cn(
+        "relative min-h-[29.8rem] sm:min-h-[26rem] bg-red-300 mt-[70px]"
+      )}
+    >
       <div className="absolute bg-[url('/BANNER-TOPO.png')] sm:bg-[url('/BANNER-TOPO.jpg')] inset-0 bg-cover bg-top sm:bg-center bg-no-repeat" />
     </div>
   );

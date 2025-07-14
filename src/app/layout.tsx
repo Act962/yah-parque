@@ -54,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <html lang="en">
+      <html lang="en" className="scroll-smooth">
         <GoogleTagManager gtmId="GTM-THD2FT4Z" />
         <body className={`${poppins.className} antialiased`}>{children}</body>
         <GoogleAnalytics gaId="G-PEZGDN4YE3" />

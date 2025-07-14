@@ -11,10 +11,6 @@ import { sendGTMEvent } from "@next/third-parties/google";
 
 const links = [
   {
-    name: "Ingressos",
-    path: "/",
-  },
-  {
     name: "Sobre",
     path: "/",
   },
@@ -23,8 +19,8 @@ const links = [
     path: "/",
   },
   {
-    name: "Passaportes",
-    path: "/",
+    name: "Cartões Yah",
+    path: "#cards",
   },
   {
     name: "Faça sua reseva",
@@ -103,7 +99,7 @@ export function Navbar() {
                 key={`${index}-${link.path}`}
                 className="group flex flex-col gap-0.5"
               >
-                <Link href="#" className="text-sm">
+                <Link href={link.path} className="text-sm">
                   {" "}
                   {link.name}{" "}
                 </Link>
@@ -140,7 +136,11 @@ export function Navbar() {
                   key={`${index}-${link.path}`}
                   className="group flex flex-col gap-0.5 w-fit"
                 >
-                  <Link href="#" className="text-sm">
+                  <Link
+                    href={link.path}
+                    className="text-sm"
+                    onClick={() => setMenuOpen(false)}
+                  >
                     {" "}
                     {link.name}{" "}
                   </Link>
