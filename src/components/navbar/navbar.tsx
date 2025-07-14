@@ -93,7 +93,7 @@ export function Navbar() {
       <nav className="relative w-full bg-orange-500 px-4 h-[70px] flex items-center justify-center">
         <div className="absolute inset-0 bg-[url('/background-navbar.png')] object-cover bg-center bg-no-repeat" />
         <div
-          className="relative w-full max-w-7xl mx-auto flex items-center justify-between
+          className="relative w-full max-w-6xl mx-auto flex items-center justify-between
         "
         >
           <Logo />

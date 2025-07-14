@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="relative px-4 bg-[#0069D6] sm:bg-transparent h-[40rem] flex flex-col items-center justify-center text-white">
       <div className="absolute hidden sm:block sm:bg-[url('/footer.png')] inset-0 bg-cover bg-left bg-no-repeat" />
-      <div className="relative w-full max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4 mt-16 sm:mt-60">
+      <div className="relative w-full max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-4 mt-16 sm:mt-60">
         {/* Logo + Links */}
         <div className="flex items-center gap-4">
           <Logo />

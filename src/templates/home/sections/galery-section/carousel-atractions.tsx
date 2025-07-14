@@ -94,7 +94,7 @@ export default function ImageGallery() {
                 key={index}
                 className="relative w-full aspect-[16/9] shrink-0 overflow-hidden rounded-4xl"
               >
-                <span className="absolute bg-[#F5C000] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 px-4 py-2 rounded-full text-nowrap text-sm font-medium text-white z-30">
+                <span className=" absolute bg-[#F5C000] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 px-4 py-2 rounded-full text-nowrap text-sm font-medium text-white z-30">
                   {slide.title}
                 </span>
                 <Image
