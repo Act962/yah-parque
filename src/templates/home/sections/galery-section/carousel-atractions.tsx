@@ -6,22 +6,22 @@ import { cn } from "@/lib/utils";
 
 const slides = [
   {
-    src: "/image-1.jpg",
+    src: "/toy-1.png",
     alt: "Thumb 1",
     title: "Torre Yah",
   },
   {
-    src: "/image-2.jpg",
+    src: "/toy-2.png",
     alt: "Thumb 2",
     title: "Torre Yah",
   },
   {
-    src: "/image-1.jpg",
+    src: "/toy-3.png",
     alt: "Thumb 3",
     title: "Torre Yah",
   },
   {
-    src: "/image-2.jpg",
+    src: "/toy-4.png",
     alt: "Thumb 4",
     title: "Torre Yah",
   },

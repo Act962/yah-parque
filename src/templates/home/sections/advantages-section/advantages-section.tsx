@@ -1,8 +1,17 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { Square } from "lucide-react";
 import Image from "next/image";
 
 export function AdvantagesSections() {
+  const handleClick = (url: string) => {
+    sendGTMEvent({ event: "buttonClicked", value: "buy_your_passport" });
+
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="w-full py-28 flex flex-col px-4">
       <div className="w-full max-w-6xl flex flex-col mx-auto">
@@ -81,7 +90,15 @@ export function AdvantagesSections() {
                   </ul>
                 </div>
 
-                <Button variant="primary" className="w-fit [#FE5B32]">
+                <Button
+                  onClick={() =>
+                    handleClick(
+                      "https://nasaex.com/app/formulario?task=1751829613448x707539949609025500"
+                    )
+                  }
+                  variant="primary"
+                  className="w-fit bg-[#FE5B32] hover:bg-[#FE5B32]/80"
+                >
                   Adquerir seu Black Card
                 </Button>
               </div>
@@ -152,7 +169,15 @@ export function AdvantagesSections() {
                   </ul>
                 </div>
 
-                <Button variant="primary" className="w-fit">
+                <Button
+                  onClick={() =>
+                    handleClick(
+                      "https://nasaex.com/app/formulario?task=1751829613448x707539949609025500"
+                    )
+                  }
+                  variant="primary"
+                  className="w-fit"
+                >
                   Adquerir seu Black Card
                 </Button>
               </div>
