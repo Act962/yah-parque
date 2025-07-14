@@ -67,7 +67,7 @@ export function Navbar() {
             "hidden sm:flex items-center justify-center text-center font-medium bg-[#FC1F56] transition-all px-4 py-2"
           )}
         >
-          <div className="w-full max-w-7xl flex items-center justify-between mx-auto">
+          <div className="w-full max-w-6xl flex items-center justify-between mx-auto">
             <p className="text-xs  font-light">
               Um dos maiores parques aquáticos a beira-mar do Norte e Nordeste
             </p>
