@@ -6,24 +6,49 @@ import { cn } from "@/lib/utils";
 
 const slides = [
   {
-    src: "/toy-1.png",
-    alt: "Thumb 1",
-    title: "Torre Yah",
+    src: "/2.png",
+    alt: "Rio Maresia",
+    title: "Rio Maresia",
   },
   {
-    src: "/toy-2.png",
-    alt: "Thumb 2",
-    title: "Torre Yah",
+    src: "/8.png",
+    alt: "Rampa Loka",
+    title: "Rampa Loka",
   },
   {
-    src: "/toy-3.png",
-    alt: "Thumb 3",
-    title: "Torre Yah",
+    src: "/4.png",
+    alt: "Vila dos sabores",
+    title: "Vila dos sabores",
   },
   {
     src: "/toy-4.png",
-    alt: "Thumb 4",
-    title: "Torre Yah",
+    alt: "Tibum",
+    title: "Tibum",
+  },
+  {
+    src: "/5.png",
+    alt: "Splash",
+    title: "Splash",
+  },
+  {
+    src: "/6.png",
+    alt: "Pista Maluca",
+    title: "Pista Maluca",
+  },
+  {
+    src: "/7.png",
+    alt: "Espaço Brincar",
+    title: "Espaço Brincar",
+  },
+  {
+    src: "/4.png",
+    alt: "Vila dos sabores",
+    title: "Vila dos sabores",
+  },
+  {
+    src: "/3.png",
+    alt: "Black Space",
+    title: "Black Space",
   },
 ];
 
