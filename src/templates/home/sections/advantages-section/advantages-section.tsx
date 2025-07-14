@@ -69,7 +69,7 @@ export function AdvantagesSections() {
                         (sob reserva)
                       </span>
                     </li>
-                    <li className="flex gap-2 items-center text-sm font-light">
+                    {/* <li className="flex gap-2 items-center text-sm font-light">
                       <Square className="fill-[#FE5B32] stroke-[#FE5B32] w-3 h-3" />
                       <span>
                         Acesso gratuito a{" "}
@@ -77,7 +77,7 @@ export function AdvantagesSections() {
                           10 parques parceiros no Brasil.
                         </strong>{" "}
                       </span>
-                    </li>
+                    </li> */}
                     <li className="flex gap-2 items-center text-sm font-light">
                       <Square className="fill-[#FE5B32] stroke-[#FE5B32] w-3 h-3" />
                       <span>
@@ -135,10 +135,10 @@ export function AdvantagesSections() {
                       <Square className="fill-[#01C3DC] stroke-[#01C3DC] w-3 h-3" />
                       <span>
                         Entrada do titular com até{" "}
-                        <strong className="font-bold">5 dependentes.</strong>
+                        <strong className="font-bold">4 dependentes.</strong>
                       </span>
                     </li>
-                    <li className="flex gap-2 items-center text-sm font-light">
+                    {/* <li className="flex gap-2 items-center text-sm font-light">
                       <Square className="fill-[#01C3DC] stroke-[#01C3DC] w-3 h-3" />
                       <span>
                         Fila exclusiva e{" "}
@@ -147,8 +147,8 @@ export function AdvantagesSections() {
                         </strong>{" "}
                         (sob reserva)
                       </span>
-                    </li>
-                    <li className="flex gap-2 items-center text-sm font-light">
+                    </li> */}
+                    {/* <li className="flex gap-2 items-center text-sm font-light">
                       <Square className="fill-[#01C3DC] stroke-[#01C3DC] w-3 h-3" />
                       <span>
                         Acesso gratuito a{" "}
@@ -156,7 +156,7 @@ export function AdvantagesSections() {
                           10 parques parceiros no Brasil.
                         </strong>{" "}
                       </span>
-                    </li>
+                    </li> */}
                     <li className="flex gap-2 items-center text-sm font-light">
                       <Square className="fill-[#01C3DC] stroke-[#01C3DC] w-3 h-3" />
                       <span>

@@ -12,8 +12,8 @@ export function Logo() {
         src="/logo.svg"
         className="object-cover size-10 w-fit "
         alt="Logo"
-        width={100}
-        height={100}
+        width={80}
+        height={80}
       />
     </Link>
   );
