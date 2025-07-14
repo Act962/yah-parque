@@ -14,7 +14,7 @@ export function BannerSection() {
 
       <div className="w-full sm:hidden px-4">
         <Image
-          src="/BANNER-MOBILE.png"
+          src="/BANNER-MOBILE-TURMA.png"
           alt="Banner Nossa Turminha"
           width={800}
           height={700}
