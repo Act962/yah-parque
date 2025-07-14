@@ -11,7 +11,7 @@ export function FormSection() {
   const [email, setEmail] = useState("");
 
   return (
-    <div className="w-full max-w-6xl mx-auto py-32 px-4">
+    <div className="w-full max-w-6xl mx-auto py-28 px-4">
       <h3 className="font-medium text-2xl text-[#FE7130]">
         Cadastre-se para receber promoções
       </h3>

@@ -1,11 +1,13 @@
-import { AboutSection } from "./sections/about-section";
-import { AttractionSection } from "./sections/attractions-section";
-import { BannerSection } from "./sections/banner-section";
-import { FaqSection } from "./sections/faq-section";
-import { FormSection } from "./sections/form-section";
-import { GalerySection } from "./sections/galery-section";
-import { HeroSection } from "./sections/hero-section";
-import { TeamSection } from "./sections/team-section";
+import {
+  AboutSection,
+  AdvantagesSections,
+  AttractionSection,
+  BannerSection,
+  FaqSection,
+  FormSection,
+  GalerySection,
+  HeroSection,
+} from "./sections";
 
 export function HomePage() {
   return (
@@ -13,7 +15,7 @@ export function HomePage() {
       <HeroSection />
       <AboutSection />
       <AttractionSection />
-      <TeamSection />
+      <AdvantagesSections />
       <GalerySection />
       <BannerSection />
       <FaqSection />

@@ -30,7 +30,7 @@ const features = [
 
 export function AttractionSection() {
   return (
-    <section className="h-fit flex flex-col items-center justify-center py-32 px-3 ">
+    <section className="h-fit flex flex-col items-center justify-center py-18 px-3 ">
       <div className="w-full max-w-6xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature, index) => (
