@@ -12,19 +12,19 @@ import { sendGTMEvent } from "@next/third-parties/google";
 const links = [
   {
     name: "Sobre",
-    path: "/",
-  },
-  {
-    name: "Atrações",
-    path: "/",
+    path: "#sobre",
   },
   {
     name: "Cartões Yah",
-    path: "#cards",
+    path: "#cartoes",
+  },
+  {
+    name: "Atrações",
+    path: "#atracoes",
   },
   {
     name: "Faça sua reseva",
-    path: "/",
+    path: "#faca-sua-reserva",
   },
 ];
 

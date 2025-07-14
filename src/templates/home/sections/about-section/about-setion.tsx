@@ -3,7 +3,10 @@ import Image from "next/image";
 export function AboutSection() {
   return (
     <>
-      <div className="h-full pb-48 pt-20 px-4 text-white relative">
+      <section
+        id="sobre"
+        className="h-full pb-48 pt-20 px-4 text-white relative scroll-mt-4"
+      >
         <div className="absolute bg-[url('/banner-2.png')] inset-0 bg-cover bg-left bg-no-repeat" />
 
         <div className="relative mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 place-content-center gap-2">
@@ -52,7 +55,7 @@ export function AboutSection() {
             className="object-cover h-full"
           />
         </div>
-      </div>
+      </section>
     </>
   );
 }
