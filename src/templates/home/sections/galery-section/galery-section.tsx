@@ -2,7 +2,7 @@ import ImageGallery from "./carousel-atractions";
 
 export function GalerySection() {
   return (
-    <div className=" py-20 px-4">
+    <section id="atracoes" className=" py-20 px-4 scroll-mt-4">
       <div className="w-full max-w-6xl mx-auto space-y-6">
         <div className=" flex flex-col gap-0.5">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#FEB725]">
@@ -14,6 +14,6 @@ export function GalerySection() {
         </div>
         <ImageGallery />
       </div>
-    </div>
+    </section>
   );
 }
