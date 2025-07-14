@@ -13,10 +13,10 @@ export function AdvantagesSections() {
   };
 
   return (
-    <div className="w-full py-28 flex flex-col px-4">
+    <div className="w-full py-16 flex flex-col px-4">
       <div className="w-full max-w-6xl flex flex-col mx-auto">
         {/* Title */}
-        <div className="mt-12 flex flex-col gap-0.5 text-center sm:text-start">
+        <div className="flex flex-col gap-0.5 text-center sm:text-start">
           <h2 className="text-2xl md:text-3xl font-semibold text-orange-500">
             Conheça Nosso Park
           </h2>
@@ -69,15 +69,6 @@ export function AdvantagesSections() {
                         (sob reserva)
                       </span>
                     </li>
-                    {/* <li className="flex gap-2 items-center text-sm font-light">
-                      <Square className="fill-[#FE5B32] stroke-[#FE5B32] w-3 h-3" />
-                      <span>
-                        Acesso gratuito a{" "}
-                        <strong className="font-bold">
-                          10 parques parceiros no Brasil.
-                        </strong>{" "}
-                      </span>
-                    </li> */}
                     <li className="flex gap-2 items-center text-sm font-light">
                       <Square className="fill-[#FE5B32] stroke-[#FE5B32] w-3 h-3" />
                       <span>
@@ -99,7 +90,7 @@ export function AdvantagesSections() {
                   variant="primary"
                   className="w-fit bg-[#FE5B32] hover:bg-[#FE5B32]/80"
                 >
-                  Adquerir seu Black Card
+                  Adquirir seu Black Card
                 </Button>
               </div>
             </div>
@@ -138,25 +129,6 @@ export function AdvantagesSections() {
                         <strong className="font-bold">4 dependentes.</strong>
                       </span>
                     </li>
-                    {/* <li className="flex gap-2 items-center text-sm font-light">
-                      <Square className="fill-[#01C3DC] stroke-[#01C3DC] w-3 h-3" />
-                      <span>
-                        Fila exclusiva e{" "}
-                        <strong className="font-bold">
-                          acesso prioritário aos Black Space
-                        </strong>{" "}
-                        (sob reserva)
-                      </span>
-                    </li> */}
-                    {/* <li className="flex gap-2 items-center text-sm font-light">
-                      <Square className="fill-[#01C3DC] stroke-[#01C3DC] w-3 h-3" />
-                      <span>
-                        Acesso gratuito a{" "}
-                        <strong className="font-bold">
-                          10 parques parceiros no Brasil.
-                        </strong>{" "}
-                      </span>
-                    </li> */}
                     <li className="flex gap-2 items-center text-sm font-light">
                       <Square className="fill-[#01C3DC] stroke-[#01C3DC] w-3 h-3" />
                       <span>
@@ -178,7 +150,7 @@ export function AdvantagesSections() {
                   variant="primary"
                   className="w-fit"
                 >
-                  Adquerir seu Platinum Card
+                  Adquirir seu Platinum Card
                 </Button>
               </div>
             </div>

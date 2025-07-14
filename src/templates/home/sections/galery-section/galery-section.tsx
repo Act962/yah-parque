@@ -2,9 +2,9 @@ import ImageGallery from "./carousel-atractions";
 
 export function GalerySection() {
   return (
-    <div className=" py-32 px-4">
+    <div className=" py-20 px-4">
       <div className="w-full max-w-6xl mx-auto space-y-6">
-        <div className="mt-12 flex flex-col gap-0.5">
+        <div className=" flex flex-col gap-0.5">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#FEB725]">
             Atrações - adrenalina e aventura
           </h2>
