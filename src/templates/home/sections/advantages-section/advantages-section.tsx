@@ -105,7 +105,7 @@ export function AdvantagesSections() {
               <div className="flex flex-col gap-4">
                 <div className="w-full max-w-xl p-8 shadow-sm rounded-3xl">
                   <h3 className="text-2xl font-semibold text-[#01C3DC]">
-                    Yah Black Card
+                    Yah Platinum Card
                   </h3>
                   <ul className="space-y-1">
                     <li className="flex gap-2 items-center text-sm font-light">
