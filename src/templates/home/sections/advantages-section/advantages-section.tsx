@@ -81,7 +81,7 @@ export function AdvantagesSections() {
                   </ul>
                 </div>
 
-                <Button variant="primary" className="w-fit">
+                <Button variant="primary" className="w-fit [#FE5B32]">
                   Adquerir seu Black Card
                 </Button>
               </div>
