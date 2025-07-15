@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { DialogVideoPark } from "./dialog-video-park";
 
 export function AboutSection() {
   return (
@@ -18,22 +19,37 @@ export function AboutSection() {
             </h2>
             <Image
               src="/venha-ser-feliz.png"
-              width={442}
-              height={454}
+              width={400}
+              height={400}
               alt="Venha ser Feliz"
-              className="w-64 object-cover "
+              className="w-64 object-cover"
             />
           </div>
 
           {/* Right */}
           <div className="flex flex-col space-y-6">
-            <Image
-              src="/foto-1.png"
-              width={939}
-              height={480}
-              alt="Yah Park"
-              className="w-full object-cover"
-            />
+            {/* Card + Video */}
+            <DialogVideoPark>
+              <div className="relative">
+                <Image
+                  src="/foto-1.png"
+                  width={939}
+                  height={480}
+                  alt="Yah Park"
+                  className="w-full object-cover"
+                />
+
+                <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-white/40 p-4 rounded-full hover:scale-110 duration-300 cursor-pointer">
+                  <Image
+                    src="/play.svg"
+                    width={45}
+                    height={45}
+                    alt="Play Video"
+                    className="ml-2"
+                  />
+                </div>
+              </div>
+            </DialogVideoPark>
             <p className="text-sx sm:text-sm font-light">
               O litoral do Piauí já é sinônimo de paraíso, sol e brisa do mar.
               Agora, imagine tudo isso com uma dose extra de adrenalina,

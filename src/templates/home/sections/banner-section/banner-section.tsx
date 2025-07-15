@@ -9,7 +9,7 @@ export function BannerSection() {
       <motion.img
         src="/BANNER-NOVO.jpg"
         alt="Conheça nossa Turminha"
-        className="hidden sm:block w-full h-[90px] sm:h-[200px] md:h-[300px]"
+        className="hidden sm:block w-full h-[90px] sm:h-[200px] md:h-[300px] xl:h-[400px]"
       />
 
       <div className="w-full sm:hidden px-4">

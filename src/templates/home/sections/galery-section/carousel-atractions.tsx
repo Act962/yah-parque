@@ -158,7 +158,7 @@ export default function ImageGallery() {
       </div>
 
       {/* Thumbnails */}
-      <div className="-mt-10 sm:-mt-16 z-10 flex gap-2 items-center max-w-4xl mx-auto">
+      <div className="-mt-10 sm:-mt-16 z-10 flex gap-1 items-center max-w-4xl mx-auto overflow-y-auto">
         {slides.map((thumb, index) => (
           <button
             key={index}
