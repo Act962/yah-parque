@@ -10,7 +10,7 @@ export function Logo() {
     >
       <Image
         src="/logo.svg"
-        className="object-cover size-10 w-fit "
+        className="object-cover"
         alt="Logo"
         width={80}
         height={80}

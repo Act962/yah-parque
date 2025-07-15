@@ -7,7 +7,7 @@ export function HeroSection() {
         "relative min-h-[29.8rem] sm:min-h-[26rem] bg-red-300 mt-[70px]"
       )}
     >
-      <div className="absolute bg-[url('/BANNER-TOPO.png')] sm:bg-[url('/BANNER-TOPO.jpg')] inset-0 bg-cover bg-top sm:bg-center bg-no-repeat" />
+      <div className="absolute bg-[url('/BANNER-MOBILE-NOVO.png')] sm:bg-[url('/BANNER-TOPO.jpg')] inset-0 bg-cover bg-left sm:bg-center bg-no-repeat" />
     </div>
   );
 }
