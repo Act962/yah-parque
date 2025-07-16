@@ -12,8 +12,8 @@ export function DialogVideoPark({ children }: DialogVideoPark) {
         <iframe
           width="100%"
           height="100%"
-          className="rounded-lg hidden"
-          src="https://www.youtube.com/embed/cdllOqN3GcQ?si=B93me-OuW0T9ORqC&autoplay=1&mute=1"
+          className="rounded-lg"
+          src="https://www.youtube.com/embed/d5LPXod99EI?si=pbn79w2sHc-AluIu&autoplay=1"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
