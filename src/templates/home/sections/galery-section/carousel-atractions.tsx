@@ -170,7 +170,7 @@ export default function ImageGallery() {
                 : "border-transparent hover:border-gray-300"
             )}
           >
-            <span className="absolute hidden sm:block bg-[#F5C000] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 px-2 py-1 rounded-full text-nowrap text-xs font-medium text-white">
+            <span className="absolute hidden sm:block bg-[#F5C000] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-medium text-white">
               {thumb.title}
             </span>
             <Image
