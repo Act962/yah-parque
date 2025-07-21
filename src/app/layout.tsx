@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+import { AosInit } from "@/components/aos";
 
 // const filsonSoft = localFont({
 //   src: [
@@ -56,7 +57,9 @@ export default function RootLayout({
     <>
       <html lang="en" className="scroll-smooth">
         <GoogleTagManager gtmId="GTM-THD2FT4Z" />
-        <body className={`${poppins.className} antialiased`}>{children}</body>
+        <body className={`${poppins.className} antialiased`}>
+          {children} <AosInit />{" "}
+        </body>
         <GoogleAnalytics gaId="G-PEZGDN4YE3" />
       </html>
     </>

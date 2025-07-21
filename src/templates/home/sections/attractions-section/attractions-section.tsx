@@ -40,6 +40,7 @@ export function AttractionSection() {
               description={feature.description}
               alt={feature.alt}
               imgUrl={feature.icon}
+              duration={(index + 1) * 500}
             />
           ))}
         </div>

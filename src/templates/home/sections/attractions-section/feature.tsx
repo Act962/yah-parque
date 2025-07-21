@@ -5,11 +5,22 @@ interface Feature {
   description: string;
   imgUrl: string;
   alt: string;
+  duration?: number;
 }
 
-export function Feature({ title, description, imgUrl, alt }: Feature) {
+export function Feature({
+  title,
+  description,
+  imgUrl,
+  alt,
+  duration,
+}: Feature) {
   return (
-    <div className="flex items-center justify-center w-full gap-4 p-6 shadow-sm rounded-[50px]">
+    <div
+      className="flex items-center justify-center w-full gap-4 p-6 shadow-sm rounded-[50px]"
+      data-aos="flip-up"
+      data-aos-duration={duration || "1000"}
+    >
       <Image
         src={imgUrl}
         className="w-16 h-16 lg:w-20 lg:h-20"

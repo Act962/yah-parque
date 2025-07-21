@@ -13,11 +13,16 @@ export function AboutSection() {
         <div className="relative mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 place-content-center gap-2">
           {/* Left */}
           <div className="w-full  col-span-1 flex flex-col space-y-8">
-            <h2 className="font-bold text-2xl sm:text-3xl md:text-6xl">
+            <h2
+              data-aos="fade-up"
+              className="font-bold text-2xl sm:text-3xl md:text-6xl"
+            >
               Por que escolher o <br />
               <span className="text-[#FFE400]">Yah Acqua Park?</span>
             </h2>
             <Image
+              data-aos="fade-up"
+              data-aos-duration="2000"
               src="/venha-ser-feliz.png"
               width={400}
               height={400}
@@ -30,7 +35,11 @@ export function AboutSection() {
           <div className="flex flex-col space-y-6">
             {/* Card + Video */}
             <DialogVideoPark>
-              <div className="relative">
+              <div
+                className="relative"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <Image
                   src="/foto-1.png"
                   width={939}
@@ -50,12 +59,20 @@ export function AboutSection() {
                 </div>
               </div>
             </DialogVideoPark>
-            <p className="text-sx sm:text-sm font-light">
+            <p
+              className="text-sx sm:text-sm font-light"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               O litoral do Piauí já é sinônimo de paraíso, sol e brisa do mar.
               Agora, imagine tudo isso com uma dose extra de adrenalina,
               relaxamento e muita, mas muita alegria para toda a família!
             </p>
-            <p className="text-sx sm:text-sm font-light">
+            <p
+              className="text-sx sm:text-sm font-light"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               O Yah Acqua Park é o mais novo complexo de entretenimento do
               Piauí, pronto para te surpreender com uma estrutura moderna,
               segura e pensada para criar memórias inesquecíveis.
