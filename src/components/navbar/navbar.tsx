@@ -48,8 +48,7 @@ export function Navbar() {
   const handleClick = () => {
     sendGTMEvent({ event: "buttonClicked", value: "buy_your_passport" });
 
-    const url =
-      "https://nasaex.com/app/formulario?task=1748707030433x441797963239915500";
+    const url = "https://www.bilheteriadigital.com/yahacquapark";
 
     window.open(url, "_blank");
   };
@@ -104,7 +103,7 @@ export function Navbar() {
                   {link.name}{" "}
                 </Link>
                 <div
-                  className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 bg-orange-600`}
+                  className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 bg-white`}
                 />
               </li>
             ))}
@@ -155,7 +154,7 @@ export function Navbar() {
               className="w-full mt-6"
               onClick={handleClick}
             >
-              Compre seu Passaporte
+              Compre seu Ingresso
             </Button>
           </div>
         )}
