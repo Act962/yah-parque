@@ -113,7 +113,7 @@ export function Navbar() {
             className="hidden md:inline"
             onClick={handleClick}
           >
-            Compre seu Passaporte
+            Compre seu Ingresso
           </Button>
 
           <Button
@@ -154,7 +154,7 @@ export function Navbar() {
               className="w-full mt-6"
               onClick={handleClick}
             >
-              Compre seu Ingresso
+              COMPRE SEU INGRESSO
             </Button>
           </div>
         )}

@@ -10,8 +10,7 @@ export function Footer() {
   const handleClick = () => {
     sendGTMEvent({ event: "buttonClicked", value: "buy_your_passport" });
 
-    const url =
-      "https://nasaex.com/app/formulario?task=1748707030433x441797963239915500";
+    const url = "https://www.bilheteriadigital.com/yahacquapark";
 
     window.open(url, "_blank");
   };
@@ -54,10 +53,10 @@ export function Footer() {
         <div className="flex flex-col items-center justify-center gap-2">
           <Button
             variant="primary"
-            className="px-9 py-2 rounded-full transition-all"
+            className="px-9 py-2 rounded-full transition-all uppercase sm:normal-case"
             onClick={handleClick}
           >
-            Compre seu passaporte
+            Compre seu Ingresso
           </Button>
           <div>
             <span className="font-bold text-[#E7D110]">@yahacquapark</span>
