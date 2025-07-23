@@ -28,17 +28,17 @@ const links = [
 const socialLink = [
   {
     src: "/icons/instagram.svg",
-    alt: "Instagram Link",
+    alt: "Instagram",
     link: "https://www.instagram.com/yahacquapark",
   },
   {
     src: "/icons/youtube.svg",
-    alt: "You Tube Link",
+    alt: "You Tube",
     link: "https://www.youtube.com/@YahPark",
   },
   {
     src: "/icons/tiktok.svg",
-    alt: "Tik Tok Link",
+    alt: "Tik Tok",
     link: "https://www.tiktok.com/@yahacquapark",
   },
 ];
