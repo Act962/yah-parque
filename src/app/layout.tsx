@@ -43,7 +43,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Yah Acqua Park",
-  description: "Parque Aquático",
+  description:
+    "Parque aquático em Luís Correia, litoral do Nordeste. Piscinas, toboáguas, área kids e lazer completo para crianças e famílias no Yah Acqua Park",
   robots: "index, follow",
   icons: {
     icon: "/logo.svg",
