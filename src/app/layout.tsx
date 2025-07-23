@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { AosInit } from "@/components/aos";
@@ -58,7 +59,9 @@ export default function RootLayout({
       <html lang="en" className="scroll-smooth">
         <GoogleTagManager gtmId="GTM-THD2FT4Z" />
         <body className={`${poppins.className} antialiased`}>
-          {children} <AosInit />{" "}
+          {children}
+          <Analytics />
+          <AosInit />
         </body>
         <GoogleAnalytics gaId="G-PEZGDN4YE3" />
       </html>
