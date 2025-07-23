@@ -6,6 +6,43 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { sendGTMEvent } from "@next/third-parties/google";
 
+const links = [
+  {
+    name: "Sobre",
+    path: "#sobre",
+  },
+  {
+    name: "Cartões Yah",
+    path: "#cartoes",
+  },
+  {
+    name: "Atrações",
+    path: "#atracoes",
+  },
+  {
+    name: "Faça sua reseva",
+    path: "#faca-sua-reserva",
+  },
+];
+
+const socialLink = [
+  {
+    src: "/icons/instagram.svg",
+    alt: "Instagram",
+    link: "https://www.instagram.com/yahacquapark",
+  },
+  {
+    src: "/icons/youtube.svg",
+    alt: "You Tube",
+    link: "https://www.youtube.com/@YahPark",
+  },
+  {
+    src: "/icons/tiktok.svg",
+    alt: "Tik Tok",
+    link: "https://www.tiktok.com/@yahacquapark",
+  },
+];
+
 export function Footer() {
   const handleClick = () => {
     sendGTMEvent({ event: "buttonClicked", value: "buy_your_passport" });
@@ -22,31 +59,16 @@ export function Footer() {
         <div className="flex items-center gap-4">
           <Logo />
           <ul className="hidden sm:block">
-            <li>
-              <Link href="/" className="hover:underline underline-offset-2">
-                Ingressos
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="hover:underline underline-offset-2">
-                Sobre o parque
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="hover:underline underline-offset-2">
-                Atrações
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="hover:underline underline-offset-2">
-                Passaportes
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="hover:underline underline-offset-2">
-                Faça sua reserva
-              </Link>
-            </li>
+            {links.map((link, index) => (
+              <li key={index}>
+                <Link
+                  href={link.path}
+                  className="hover:underline underline-offset-2"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         {/* Call to Action + Localization */}
@@ -73,16 +95,31 @@ export function Footer() {
           </span>
 
           <div className="flex items-center gap-1">
-            <Image
-              src="/redes-sociais.svg"
-              alt="Redes sociais"
-              width={60}
-              height={45}
-            />
+            {socialLink.map((link) => (
+              <Link href={link.link} key={link.alt} target="_blank">
+                {link.alt === "Tik Tok" ? (
+                  <Image
+                    src={link.src}
+                    alt="Redes sociais"
+                    width={18}
+                    height={18}
+                    className="size-4 p-0.5 fill-white hover:fill-white/65 cursor-pointer"
+                  />
+                ) : (
+                  <Image
+                    src={link.src}
+                    alt="Redes sociais"
+                    width={18}
+                    height={18}
+                    className="size-6 p-0.5 fill-white hover:fill-white/65 cursor-pointer"
+                  />
+                )}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
-      <span className="relative text-center text-sm mt-16">
+      <span className="relative text-center text-xs mt-16">
         Copyright &copy; Yah Acqua Park 2025 - Todos os direitos reservados
       </span>
     </footer>

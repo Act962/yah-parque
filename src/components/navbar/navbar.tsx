@@ -28,6 +28,24 @@ const links = [
   },
 ];
 
+const socialLink = [
+  {
+    src: "/icons/instagram.svg",
+    alt: "Instagram",
+    link: "https://www.instagram.com/yahacquapark",
+  },
+  {
+    src: "/icons/youtube.svg",
+    alt: "You Tube",
+    link: "https://www.youtube.com/@YahPark",
+  },
+  {
+    src: "/icons/tiktok.svg",
+    alt: "Tik Tok",
+    link: "https://www.tiktok.com/@yahacquapark",
+  },
+];
+
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,12 +91,27 @@ export function Navbar() {
               </span>
 
               <div className="flex items-center">
-                <Image
-                  src="/redes-sociais.svg"
-                  alt="Redes sociais"
-                  width={60}
-                  height={45}
-                />
+                {socialLink.map((link) => (
+                  <Link href={link.link} key={link.alt} target="_blank">
+                    {link.alt === "Tik Tok" ? (
+                      <Image
+                        src={link.src}
+                        alt="Redes sociais"
+                        width={18}
+                        height={18}
+                        className="size-3.5 p-0.5 fill-white hover:fill-white/65 cursor-pointer"
+                      />
+                    ) : (
+                      <Image
+                        src={link.src}
+                        alt="Redes sociais"
+                        width={18}
+                        height={18}
+                        className="size-5 p-0.5 fill-white hover:fill-white/65 cursor-pointer"
+                      />
+                    )}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
