@@ -75,7 +75,7 @@ export function Footer() {
         {/* Social */}
         <div className="flex flex-col items-center">
           <span className="text-xs sm:text-sm">
-            Acesso nossas redes socias:
+            Acesse nossas redes socias:
           </span>
 
           <div className="flex items-center gap-1">
