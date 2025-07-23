@@ -47,6 +47,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "/logo.svg",
   },
+  openGraph: {
+    title: "Yah Acqua Park",
+    description: "Venda seus produtos como afiliado em um único lugar",
+    url: "https://www.yahacquapark.com.br/BANNER-MOBILE-NOVO.png",
+    siteName: "Yah Acqua Park",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "https://www.yahacquapark.com.br/BANNER-MOBILE-NOVO.png",
+        width: 800,
+        height: 600,
+        alt: "Yah Acqua Park",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
