@@ -44,6 +44,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Yah Acqua Park",
   description: "Parque Aquático",
+  robots: "index, follow",
   icons: {
     icon: "/logo.svg",
     apple: "/logo.svg",
