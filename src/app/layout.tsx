@@ -46,6 +46,7 @@ export const metadata: Metadata = {
   description: "Parque Aquático",
   icons: {
     icon: "/logo.svg",
+    apple: "/logo.svg",
   },
   openGraph: {
     title: "Yah Acqua Park",
@@ -57,8 +58,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://www.yahacquapark.com.br/BANNER-MOBILE-NOVO.png",
-        width: 800,
-        height: 600,
+        width: 1200,
+        height: 630,
         alt: "Yah Acqua Park",
       },
     ],
