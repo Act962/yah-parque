@@ -50,7 +50,7 @@ export function FormSection() {
   }
 
   return (
-    <div id="faca-sua-reserva" className="pb-20 scroll-mt-4">
+    <div id="faca-sua-reserva" className="pb-20 scroll-mt-4 px-4">
       <div className="w-full max-w-6xl mx-auto">
         <h3 className="font-medium text-2xl text-[#FE7130]">
           Cadastre-se para receber promoções
