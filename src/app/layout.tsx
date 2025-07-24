@@ -46,10 +46,6 @@ export const metadata: Metadata = {
   description:
     "Parque aquático em Luís Correia, litoral do Nordeste. Piscinas, toboáguas, área kids e lazer completo para crianças e famílias no Yah Acqua Park",
   robots: "index, follow",
-  icons: {
-    icon: "/logo.svg",
-    apple: "/logo.svg",
-  },
   openGraph: {
     title: "Yah Acqua Park",
     description: "Venda seus produtos como afiliado em um único lugar",

@@ -122,14 +122,13 @@ export function FormSection() {
             </DialogTitle>
 
             <DialogDescription className="text-gray-700 space-y-3">
-              <p className="font-semibold">
+              <p className="font-semibold text-center">
                 Sua mensagem foi enviada com sucesso!
               </p>
-              <p>
+              <p className="text-xs">
                 Obrigado por entrar em contato conosco! Nossa equipe já recebeu
                 suas informações e em breve retornaremos para proporcionar
-                momentos inesquecíveis de diversão aquática para você e sua
-                família.
+                momentos inesquecíveis de diversão para você e sua família.
               </p>
               <div className="bg-blue-50 p-3 rounded-lg border border-blue-200">
                 <p className="text-blue-700 font-medium text-sm">
@@ -140,10 +139,7 @@ export function FormSection() {
           </DialogHeader>
 
           <DialogFooter className="justify-center">
-            <Button
-              onClick={() => setOpen(false)}
-              className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-8 py-2 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
+            <Button onClick={() => setOpen(false)} variant="primary">
               <Waves className="mr-2 h-4 w-4" />
               Continuar Navegando
             </Button>
