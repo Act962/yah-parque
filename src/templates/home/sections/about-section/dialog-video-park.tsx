@@ -13,7 +13,7 @@ export function DialogVideoPark({ children }: DialogVideoPark) {
           width="100%"
           height="100%"
           className="rounded-lg"
-          src="https://www.youtube.com/embed/d5LPXod99EI?si=pbn79w2sHc-AluIu&autoplay=1"
+          src="https://www.youtube.com/embed/qWWjC4p-aO4?si=4UKkuxKfWAld2BjC&autoplay=1"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
