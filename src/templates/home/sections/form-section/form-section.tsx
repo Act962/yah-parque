@@ -92,9 +92,9 @@ export function FormSection() {
               className="text-xs text-[#FE7130] font-light"
             >
               Aceito receber comunicações e ofertas do Yah Park. Ao enviar,
-              concorda com a Política de Privacidade e está ciente que seus
-              dados poderão ser utilizados para enviar de promoção e ações de
-              marketing da Yah Park.
+              concordo com a Política de Privacidade e estou ciente de que meus
+              dados poderão ser utilizados para o envio de promoções e ações de
+              marketing do Yah Park.
             </Label>
           </div>
 
