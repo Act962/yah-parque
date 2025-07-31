@@ -18,7 +18,7 @@ export function WhatsFloating() {
 
   return (
     <button
-      className="fixed z-50 bottom-4 right-4 cursor-pointer"
+      className="fixed z-50 bottom-20 right-7 cursor-pointer"
       onClick={handleClick}
     >
       <Image
@@ -26,7 +26,7 @@ export function WhatsFloating() {
         alt="Logo Whats"
         width={2048}
         height={2048}
-        className="size-12 rounded-full animate-scale-up"
+        className="size-12 rounded-full hover:shadow-2xl hover:brightness-75 transition-all hover:scale-105"
       />
     </button>
   );
