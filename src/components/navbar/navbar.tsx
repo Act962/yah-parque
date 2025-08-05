@@ -141,13 +141,14 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <Button
+          <div></div>
+          {/* <Button
             variant="primary"
             className="hidden md:inline"
             onClick={handleClick}
           >
             Compre seu Ingresso
-          </Button>
+          </Button> */}
 
           <Button
             aria-label="menu-btn"

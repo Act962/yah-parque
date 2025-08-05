@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "../logo";
 import Image from "next/image";
-import { ButtonBuyAction } from "./button-buy";
+// import { ButtonBuyAction } from "./button-buy";
 
 const links = [
   {
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
         {/* Call to Action + Localization */}
         <div className="flex flex-col items-center justify-center gap-2">
-          <ButtonBuyAction />
+          {/* <ButtonBuyAction /> */}
           <div>
             <span className="font-bold text-[#E7D110]">@yahacquapark</span>
             <p className="text-sm">
