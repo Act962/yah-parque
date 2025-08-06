@@ -64,9 +64,13 @@ export function Navbar() {
   }, []);
 
   const handleClick = () => {
-    sendGTMEvent({ event: "buttonClicked", value: "buy_your_passport" });
+    sendGTMEvent({ event: "buttonClicked", value: "whatsapp-float-button" });
 
-    const url = "https://www.bilheteriadigital.com/yahacquapark";
+    const phoneNumber = "86994835523";
+    const message = "Olá! Quero mais informações.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
 
     window.open(url, "_blank");
   };
@@ -142,13 +146,13 @@ export function Navbar() {
             ))}
           </ul>
           <div></div>
-          {/* <Button
+          <Button
             variant="primary"
             className="hidden md:inline"
             onClick={handleClick}
           >
-            Compre seu Ingresso
-          </Button> */}
+            Fale Conosco
+          </Button>
 
           <Button
             aria-label="menu-btn"
@@ -185,10 +189,10 @@ export function Navbar() {
             </ul>
             <Button
               variant="primary"
-              className="w-full mt-6"
+              className="w-full mt-6 uppercase"
               onClick={handleClick}
             >
-              COMPRE SEU INGRESSO
+              Fale Conosco
             </Button>
           </div>
         )}
