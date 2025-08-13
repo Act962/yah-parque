@@ -85,7 +85,7 @@ export function Navbar() {
           )}
         >
           <div className="w-full max-w-6xl flex items-center justify-between mx-auto">
-            <p className="text-xs  font-light">
+            <p className="text-xs font-light">
               Um dos maiores parques aquáticos a beira-mar do Norte e Nordeste
             </p>
 
@@ -145,7 +145,7 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <div></div>
+
           <Button
             variant="primary"
             className="hidden md:inline"

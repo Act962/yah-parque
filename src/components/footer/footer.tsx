@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Logo } from "../logo";
 import Image from "next/image";
-// import { ButtonBuyAction } from "./button-buy";
 
 const links = [
   {
@@ -42,9 +41,9 @@ const socialLink = [
 
 export function Footer() {
   return (
-    <footer className="relative px-4 bg-[#0069D6] sm:bg-transparent h-[40rem] flex flex-col items-center justify-center text-white">
-      <div className="absolute hidden sm:block sm:bg-[url('/footer.png')] inset-0 bg-cover bg-left bg-no-repeat" />
-      <div className="relative w-full max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-4 mt-16 sm:mt-60">
+    <footer className="relative px-4 bg-[#0069D6] md:bg-transparent h-[40rem] flex flex-col items-center justify-center text-white">
+      <div className="absolute hidden md:block md:bg-[url('/footer.png')] inset-0 bg-cover bg-left bg-no-repeat" />
+      <div className="relative w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-8 mt-16 md:mt-60">
         {/* Logo + Links */}
         <div className="flex items-center gap-4">
           <Logo />
@@ -53,7 +52,7 @@ export function Footer() {
               <li key={index}>
                 <Link
                   href={link.path}
-                  className="hover:underline underline-offset-2"
+                  className="hover:underline text-sm underline-offset-2"
                 >
                   {link.name}
                 </Link>
@@ -70,6 +69,25 @@ export function Footer() {
               Luís Correia - PI <br />
               Praia do Barro Preto
             </p>
+          </div>
+        </div>
+        {/* Políticas */}
+        <div>
+          <h3 className="font-medium">Políticas</h3>
+
+          <div className="flex flex-col gap-1 mt-px">
+            <Link
+              href={"/politicas-de-privacidade"}
+              className="text-sm hover:underline"
+            >
+              Política de Privacidade
+            </Link>
+            <Link
+              href={"/politicas-de-cookies"}
+              className="text-sm hover:underline"
+            >
+              Política de Cookies
+            </Link>
           </div>
         </div>
         {/* Social */}
