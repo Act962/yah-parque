@@ -7,8 +7,8 @@ export function WhatsFloating() {
   const handleClick = () => {
     sendGTMEvent({ event: "buttonClicked", value: "whatsapp-float-button" });
 
-    const phoneNumber = "8694856274";
-    const message = "Olá! Quero mais informações.";
+    const phoneNumber = "558695191326";
+    const message = "Olá, quais as opções de atendimento?";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
