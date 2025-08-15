@@ -87,7 +87,7 @@ export function AdvantagesSections() {
                 <Button
                   onClick={() =>
                     handleClick(
-                      "https://nasaex.com/app/formulario?task=1751829613448x707539949609025500"
+                      "https://nasaex.com/app/formulario?task=1755031330794x345949743512289300"
                     )
                   }
                   variant="primary"
@@ -147,7 +147,7 @@ export function AdvantagesSections() {
                 <Button
                   onClick={() =>
                     handleClick(
-                      "https://nasaex.com/app/formulario?task=1751829613448x707539949609025500"
+                      "https://nasaex.com/app/formulario?task=1755031330794x345949743512289300"
                     )
                   }
                   variant="primary"
