@@ -77,12 +77,14 @@ export function Footer() {
 
           <div className="flex flex-col gap-1 mt-px">
             <Link
+              target="_blank"
               href={"/politicas-de-privacidade"}
               className="text-sm hover:underline"
             >
               Política de Privacidade
             </Link>
             <Link
+            target="_blank"
               href={"/politicas-de-cookies"}
               className="text-sm hover:underline"
             >
