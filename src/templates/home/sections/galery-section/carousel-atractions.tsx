@@ -41,11 +41,6 @@ const slides = [
     title: "Espaço Brincar",
   },
   {
-    src: "/4.png",
-    alt: "Vila dos sabores",
-    title: "Vila dos sabores",
-  },
-  {
     src: "/3.png",
     alt: "Black Space",
     title: "Black Space",
